@@ -93,20 +93,20 @@ while (balls.length < 25) {
 
 // // define loop that keeps drawing the scene constantly
 
-// function loop() {
-//     ctx.fillStyle = 'rgba(0,0,0,0.25)';
-//     ctx.fillRect(0, 0, width, height);
+function loop() {
+    ctx.fillStyle = 'rgba(0,0,0,0.25)';
+    ctx.fillRect(0, 0, width, height);
 
-//     for (let i = 0; i < balls.length; i++) {
-//         balls[i].draw();
-//         balls[i].update();
-//         balls[i].collisionDetect();
-//     }
+    for (let i = 0; i < balls.length; i++) {
+        balls[i].draw();
+        balls[i].update();
+        balls[i].collisionDetect();
+    }
 
-//     requestAnimationFrame(loop);
-// }
+    requestAnimationFrame(loop);
+}
 
-// loop();
+loop();
 
 
 class Ball {
