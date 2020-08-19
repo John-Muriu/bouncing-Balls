@@ -74,22 +74,22 @@ Ball.prototype.collisionDetect = function () {
 
 // // define array to store balls and populate it
 
-// let balls = [];
+let balls = [];
 
-// while (balls.length < 25) {
-//     const size = random(10, 20);
-//     let ball = new Ball(
-//         // ball position always drawn at least one ball width
-//         // away from the adge of the canvas, to avoid drawing errors
-//         random(0 + size, width - size),
-//         random(0 + size, height - size),
-//         random(-7, 7),
-//         random(-7, 7),
-//         'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
-//         size
-//     );
-//     balls.push(ball);
-// }
+while (balls.length < 25) {
+    const size = random(10, 20);
+    let ball = new Ball(
+        // ball position always drawn at least one ball width
+        // away from the adge of the canvas, to avoid drawing errors
+        random(0 + size, width - size),
+        random(0 + size, height - size),
+        random(-7, 7),
+        random(-7, 7),
+        'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) + ')',
+        size
+    );
+    balls.push(ball);
+}
 
 // // define loop that keeps drawing the scene constantly
 
