@@ -109,15 +109,15 @@ function loop() {
 loop();
 
 
-class Ball {
-    constructor(x, y, color, size) {
-        this.x = x,
-            this.y = y,
-            this.color = color,
-            this.size = size
-    }
-}
+// class Ball {
+//     constructor(x, y, color, size) {
+//         this.x = x,
+//             this.y = y,
+//             this.color = color,
+//             this.size = size
+//     }
+// }
 
-const myRedBall = new Ball(2, 3, 'Red', 'small');
+// const myRedBall = new Ball(2, 3, 'Red', 'small');
 
-console.log(myRedBall);
+// console.log(myRedBall);
