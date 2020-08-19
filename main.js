@@ -26,12 +26,12 @@ function Ball(x, y, velX, velY, color, size) {
 
 // // define ball draw method
 
-// Ball.prototype.draw = function () {
-//     ctx.beginPath();
-//     ctx.fillStyle = this.color;
-//     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-//     ctx.fill();
-// };
+Ball.prototype.draw = function () {
+    ctx.beginPath();
+    ctx.fillStyle = this.color;
+    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+    ctx.fill();
+};
 
 // // define ball update method
 
