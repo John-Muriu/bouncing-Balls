@@ -106,18 +106,98 @@
 //     requestAnimationFrame(loop);
 // }
 
-// loop();
+// // loop();
+
+// class Ball {
+//     constructor(x, y, color, size) {
+//         this.x = x,
+//             this.y = y,
+//             this.color = color,
+//             this.size = size
+//     }
+// }
+
+// const myRedBall = new Ball(2, 3, 'Red', 'small');
+
+// console.log(myRedBall);
+
+//converting objects to json
+
+// let cardIds = {
+//     id: 123,
+//     color: "red",
+//     size: "small",
+// };
+
+// console.log(JSON.stringify(cardIds));
+
+// //converting an array of numbre to json
+
+// let cardId = [{
+//         cardId: 567
+//     },
+//     {
+//         cardId: 876
+//     },
+//     {
+//         cardId: 654
+//     },
+//     {
+//         color: "red"
+//     },
+//     {
+//         size: "small"
+//     },
+// ];
+// console.log(JSON.stringify(cardId));
+
+///parse json
+
+// let carID = `
+// [
+//     {"carID" :345},
+//     {"carSize" : 656},
+//     {"carMade" :2020}
+// ]`;
+// let carD = JSON.parse(carID);
+
+// console.log(carD);
 
 
-class Ball {
-    constructor(x, y, color, size) {
-        this.x = x,
-            this.y = y,
-            this.color = color,
-            this.size = size
+//array Iterations
+let cardId = [{
+        cardId: 123,
+        color: "red"
+    },
+    {
+        cardId: 456,
+        color: "blue"
+    },
+    {
+        cardId: 789,
+        color: "grey"
+    }
+];
+// // cardId.forEach(car => console.log(car));
+// cardId.forEach((car, index) => console.log(car, index));
+// let style = cardId.filter(
+//     car => car.color === 'grey'
+// );
+// // console.log(style)
+// let car = cardId.find(
+//     car => car.cardId > 500
+// );
+// console.log(car);
+
+class Car {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+
+    }
+    identity(suffix) {
+        return `Car id: ${this.id}, the model: ${this.name}`;
     }
 }
-
-const myRedBall = new Ball(2, 3, 'Red', 'small');
-
-console.log(myRedBall);
+let car = new Car(34, 'Range Rover');
+console.log(car.identity('!!!'));
